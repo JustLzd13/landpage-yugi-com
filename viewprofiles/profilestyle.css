@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: rgb(172, 166, 166);
+}
+
+.container{
+    margin: 30px 40px;
+    border: 8px solid black;
+    height: 700px;
+    padding: 50px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    background: rgb(88, 87, 87);
+}
+
+.profile-dets img{
+    border-radius: 50%;
+    border: 5px solid black;
+    background: rgb(185, 176, 176);
+    margin-left: 40px;
+}
+
+.profile-dets{
+    width: 30%;
+    padding: 40px 50px;
+}
+.profile-dets .dets{
+    width: 80%;
+    background: rgb(160, 153, 153);
+    padding: 10px 10px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 1.5rem;
+}
+
+.profile-side{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.profile-side img {
+    height: 200px;
+    cursor: pointer;
+    transition: 0.25s ease;
+    padding: 10px 10px;
+}
+
+.profile-side img:hover {
+    height: 400px;
+    display: grid;
+}
+
+.profile-side .title{
+    position: absolute;
+    margin-top: -60%;
+    background: rgb(160, 153, 153);
+    border-radius: 1.5rem;
+}
+
+@media (max-width: 800px) {
+
+    .container{
+        border: 8px solid black;
+        height: 1500px;
+        padding: 20px;
+        display: grid;
+        justify-content: center;
+    }
+    
+    .profile-dets img{
+        border-radius: 50%;
+        border: 5px solid black;
+        background: rgb(185, 176, 176);
+        margin-left: 15%;
+    }
+
+    .profile-dets{
+        width: 100%;
+    }
+
+    .profile-side{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        margin-left: 30%;
+    }
+
+    .profile-side .title{
+        transform: ease 0.5s;
+        font-size: 10px;
+        position: absolute;
+        margin-top: -270%;
+        background: rgb(160, 153, 153);
+        border-radius: 1.5rem;
+    }
+}

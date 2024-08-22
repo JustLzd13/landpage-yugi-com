@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #080808;
+    color: #fff;
+}
+
+#header{
+    width: 100%;
+    height: 20vh;
+    
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; /* add space in between automatic 2 items occupy left and right */
+    flex-wrap: wrap; 
+}
+
+nav img{
+    height: 50px;
+    width: 90px;
+}
+
+nav ul li{
+    display: inline-block; /* display horizontally aligned */
+    list-style: none;
+    margin: 30px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#about{
+    padding: 50px 0;
+    width: 100%;
+    height: 60vh;
+    background-color: #22221e;
+}
+
+#about .container ul a i{
+    padding: 20px 20px;
+    cursor: pointer;
+    font-size: 40px;
+   
+}
+
+#about h1 span{
+    color: rgb(229, 255, 0);
+}
+
+#about h1{
+    font-size: 70px;    
+    margin-bottom: 20px;
+}
+
+#about h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.fa-brands{
+    color: yellow;
+}
+
+.row{
+    display: flex;
+    position: relative;
+}
+
+.about-col-2{
+    margin-left: 65%;
+    position: absolute;
+}
+
+td{
+    text-align: center;
+}
+
+
+
+/*  TABLE */
+#tournament{
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+table{
+    border-collapse: collapse;
+    background: #22221e;
+    padding: 1rem;
+}
+
+th, td{
+    padding: 1rem;
+    text-align: left;
+}
+
+caption{
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: rgb(58, 58, 52);
+    padding: 1rem;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+th{
+    background: black;
+}
+
+tr:nth-of-type(2n) {
+    background: rgb(58, 58, 52);
+}
+
+.table-cont{
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+#players-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    background-color: #22221e;
+    border: 10px solid black;
+    margin: 50px 10%;
+    overflow: hidden;
+}
+
+.card-list .card-item {
+    color: #fff;
+    width: 400px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(30px);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.card-list .card-item .user-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+    border: 3px solid #fff;
+    padding: 4px;
+}
+
+.card-list .card-item .user-name {
+    font-size: 1.15rem;
+    color: #e3e3e3;
+    font-weight: 500;
+    margin: 14px 0 40px;
+}
+
+.card-list .card-item .message-button {
+    font-size: 1.25rem;
+    padding: 10px 35px;
+    color: #030728;
+    border-radius: 6px;
+    font-weight: 500px;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid transparent;
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .message-button:hover{
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.pp-title{
+    position: absolute;
+    z-index: 4;
+    margin-top: -500px;
+}
+
+/* ABOUT footer*/
+
+footer{
+    background: #343434;
+    padding-top: 50px;
+}
+
+#contact{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.footer-content{
+    width: 33.3%;
+    
+}
+
+.footer-content h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.footer-content p{
+    text-align: center;
+    margin-top: 10px;
+}
+.linkables li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.linkables li {
+    margin-top: 10px;
+}
+.icons li {
+    text-align: center;
+    margin-right: 15%;
+
+}
+.footer-content ul{
+    text-align: center;
+}
+.footer-content li{
+    list-style: none;
+}
+.list-footer{
+    padding: 0;
+}
+.list-footer li{
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+}
+
+
+.icons li{
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin-left: 40px;
+}
+.icons i{
+    color: white;
+    font-size: 25px;
+}
+
+.bottom-bar{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 13px;
+    padding-bottom: 20px;
+}
+
+
+@media (max-width: 650px) {
+    #header{
+        position: fixed;
+        background: black;
+        z-index: 1;
+        height: 17vh;
+    }
+    
+    nav{
+        display: block; 
+        align-items: center;
+        text-align: center;
+    }
+    nav ul li{
+        display:inline-block;     
+        margin: 10px 20px;
+    }
+    #about{
+        width: 100%;
+        height: 70vh;
+    }
+    .row{
+        margin-top: 150px;
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+    #about .container ul a i{
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+    }
+    #about h1{
+        font-size: 40px;
+    }
+    .about-col-2{
+        display: none;
+    }
+    caption{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    th{
+        display: none;
+    }
+    td{
+        display: grid;
+        grid-template-columns: 15ch auto;
+        gap: 20px;
+        padding: 0.5rem 1rem;
+    }
+    td:first-child{
+        padding-top: 2rem;
+    }
+    td:last-child{
+        padding-bottom: 2rem;
+    }
+    td::before{
+        content: attr(data-cell) ": ";
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+
+    #players-profile{
+    margin: 0 10px 40px;
+    }
+
+
+}
